@@ -76,7 +76,7 @@ async function fetchIP4Address() {
     ipOutput4.innerHTML = '<span class="loading">Bezig met ophalen van IPv4...</span>';
 
     try {
-        const response = await fetch('https://ip-v4.pixelhosting.nl/index.php');
+        const response = await fetch('https://ip-v4.pixelhosting.nl/ip-api.php');
         
         if (!response.ok) {
             throw new Error(`HTTP-fout! status: ${response.status}`);
@@ -102,7 +102,7 @@ async function fetchIP6Address() {
     ipOutput6.innerHTML = '<span class="loading">Bezig met ophalen van IPv6...</span>';
 
     try {
-        const response = await fetch('https://ip-v6.pixelhosting.nl/index.php');
+        const response = await fetch('https://ip-v6.pixelhosting.nl/ip-api.php');
         
         if (!response.ok) {
             throw new Error(`HTTP-fout! status: ${response.status}`);
