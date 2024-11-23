@@ -1,1 +1,1 @@
-PixelHosting IP show scripts.
+https://git.pixelhosting.nl/PixelHosting/ip-show
